@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.full-height {
+    height: 100dvh;
+}
+
+.music-player-box {
+    width: 350px;
+    height: 500px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 15px blue;
+    border: 1px solid blue;
+}
+
+.album-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: white;
+    margin: auto;
+    background-image: url(https://indiater.com/wp-content/uploads/2021/06/Free-Music-Album-Cover-Art-Banner-Photoshop-Template-990x990.jpg);
+    background-size: 100%;
+    outline: 2px solid white;
+}
+
+.song-name {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.time {}
+
+.progressbar {
+    width: 85%;
+    appearance: none;
+    margin-top: 35px;
+
+    background: transparent;
+
+}
+
+.progressbar::-webkit-slider-runnable-track {
+    appearance: none;
+    background-color: rgb(236, 253, 0);
+    border-radius: 10px;
+    height: 15px;
+}
+
+.progressbar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    border: 3.5px solid red;
+    scale: 1.5;
+    outline: 2px solid black;
+}
+
+.progressbar::-ms-fill-lower {
+
+    appearance: none;
+    background-color: red;
+}
+
+.progressbar {
+    appearance: none;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    height: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.round-button {
+    background-color: white;
+    text-align: center;
+    padding-top: 6.5px;
+    color: blue;
+    scale: 1.5;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.round-button:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px blue;
+}
+
+@media screen and (max-width: 768px) {
+
+    .music-player-box {
+        width: 300px;
+
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#toggle-button {
+    width: 60px;
+    height: 30px;
+    border-radius: 60px;
+    /* background-color: rgb(51, 0, 25);  */
+    cursor: pointer;
+    outline: 1px solid blue;
+    position: relative;
+
+}
+
+#toggle-button-ring {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+  
+}
+
+@keyframes toggle {
+    0% {
+        left: 5%;
+
+    }
+
+    100% {
+        left: 55%;
+    }
+}

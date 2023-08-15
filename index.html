@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row full-height ">
+            <div class="col-12 d-flex justify-content-center m-auto">
+                <div class="music-player">
+                    <div class=" d-flex justify-content-center ">
+                        <div onclick="mtoo()" class="mode-toggle">
+                            <input class="d-none" id="mode-toggle" type="checkbox">
+
+                            <label onclick="mtoo()" id="toggle-button" for="mode-toggle"><span id="toggle-button-ring"
+                                    for="mode-toggle"></span></label><br>
+                            <label id="mode-status" class="mb-3 mt-2 fw-bold" for="mode-toggle">Light mode</label>
+                        </div>
+                    </div>
+                    <div class="music-player-box bg-primary">
+                        <img id="album-image" class="album-image d-block mx-auto mt-4" src="" alt="">
+                        <p id="song-name" class="song-name text-white mt-3 mb-0 text-center">Album name</p>
+                        <p id="album-artist-name" class="album-artist-name text-white text-center mt-3 mb-0">album name
+                            , artist name</p>
+                        <audio id="song" class="d-non" src="/Music/Hosanna.mp3"></audio>
+
+                        <input onchange="progcng()" id="progressbar" value="0" type="range"
+                            class="progressbar d-block mx-auto">
+                        <div class="time mt-3 d-flex justify-content-between px-4 text-white ">
+                            <p class="d-inline"><span id="total-minut">00</span> <span>:</span> <span
+                                    id="total-second">00</span> </p>
+                            <p class="d-inline"> <span id="current-minut">00</span> <span>:</span> <span
+                                    id="current-second">00</span> </p>
+
+                        </div>
+
+                        <div class="controls mt-4">
+
+                            <div onclick="pree()" id="prev" class="fa fa-step-backward round-button"></div>
+                            <div onclick="playpausefun()" id="play-pause" class="fa fa-play round-button"></div>
+                            <div onclick="nextt()" id="next" class="fa fa-step-forward round-button"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
