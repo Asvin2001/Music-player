@@ -31,7 +31,7 @@ let allmusic = [
         name: "Hasili Fisiliye",
         artist: "Aadhavan  , Harris Jayaraj, Karthik ",
         img: "Album image/crop_480x480_58006.jpg",
-        src: "music/Hasili-Fisiliye-MassTamilan.dev.mp3"
+        src: "music/Hasili-Fisiliye-MassTamilan.mp3"
     }
 ]
 
