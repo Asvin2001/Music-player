@@ -24,14 +24,14 @@ let allmusic = [
         name: "Hosanna",
         artist: "Vinnaithandi Varuvaya , A.R.Rahman",
         img: "Vinnathaandi-Varuvaayaa-Tamil-2010-20190731134123-500x500.jpg",
-        src: "Hosanna.mp3"
+        src: "Music/Hosanna.mp3"
     },
 
     {
         name: "Hasili Fisiliye",
         artist: "Aadhavan  , Harris Jayaraj, Karthik ",
         img: "crop_480x480_58006.jpg",
-        src: "Hasili-Fisiliye-MassTamilan.mp3"
+        src: "Music/Hasili-Fisiliye-MassTamilan.mp3"
     }
 ]
 
